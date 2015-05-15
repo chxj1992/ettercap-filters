@@ -1,6 +1,6 @@
-# intranet-sniffer
+# ettercap-filters
 
-An intranet sniffer tool based on [ettercap](http://ettercap.github.io/ettercap/index.html) ([ettercap git repository](https://github.com/Ettercap/ettercap))
+Some ettercap [ettercap](http://ettercap.github.io/ettercap/index.html) ([ettercap git repository](https://github.com/Ettercap/ettercap)) filters
 
 **Requirements**
 + [ettercap](http://ettercap.github.io/ettercap/index.html)
