@@ -7,9 +7,6 @@ An intranet sniffer tool based on [ettercap](http://ettercap.github.io/ettercap/
 + [whatever ettercap requires](http://ettercap.github.io/ettercap/about.html#footer)
 
 **Getting startted**
-    
-    //enable ip forward
-    echo 1  >  /proc/sys/net/ipv4/ip_forword
 
     git clone https://github.com/chxj1992/intranet-sniffer.git
     cd intranet-sniffer
