@@ -1,6 +1,6 @@
 # ettercap-filters
 
-Some ettercap [ettercap](http://ettercap.github.io/ettercap/index.html) ([ettercap git repository](https://github.com/Ettercap/ettercap)) filters
+Some [ettercap] filters(http://ettercap.github.io/ettercap/index.html) ([ettercap git repository](https://github.com/Ettercap/ettercap))
 
 **Requirements**
 + [ettercap](http://ettercap.github.io/ettercap/index.html)
